@@ -110,6 +110,7 @@ a:hover, a:focus {
 
 #name {
 	float:left;
+	display:block;
 	font-size:22;
 	font-weight:bold;
 	height: 100%;
@@ -256,7 +257,7 @@ transition: all 0.4s ease 0s;
 	padding: 5rem 0;
 	overflow: hidden;
 	text-align: center;
-	background: #e1f0fe;
+	background: #a8d9c5;
 	width: 100%;
 }
 
@@ -275,7 +276,7 @@ transition: all 0.4s ease 0s;
 
 #blog li a {
 	display: block;
-	border-bottom:solid 1px #c2cfdb;
+	border-bottom:solid 1px #a2a2a2;
 	clear: both; 
 	overflow:hidden;
 	margin-bottom: 1.5rem;
@@ -303,4 +304,102 @@ transition: all 0.4s ease 0s;
 	padding: 3rem 0;
 }
 
+#social {
+	display: block;
+	width:80%;
+	text-align:center;
+	color: red;
+	margin: 0 auto;
+}
+
+#social li {
+	display:inline-block;
+	margin: 0 0.5rem;
+}
+
+#social a {
+	border: 2px solid #616161;
+	border-radius: 50%;
+	display: inline-block;
+	letter-spacing: normal;
+	text-align:center;
+	width: 2.5rem; 
+	height: 2.5rem;
+}
+
+#social a i {
+	color: #fbfbfb;
+	font-size: 1.5rem;
+	display: inline-block;
+	line-height: 1;
+	text-align: center;
+	padding-top: 0.5rem;
+	transition: all 0.4s ease 0s;
+}
+
+#copyright {
+	color: #bcbcbc;
+	text-align:center;
+	margin: 2rem 0 0;
+	font-size: 0.9rem;
+}
+
 /* RESPONSIVE */
+
+/* SCREENS (960px) */
+
+@media only screen and (min-width:960px) and (max-width:1199px) {
+	#nav {
+		width: 940px;
+		margin: 0 auto;
+	}
+	#project-list {
+		width: 940px;
+		margin: 0 auto;
+		padding: 4rem 1 rem;
+	}
+	#blog { 
+		padding: 4rem 0;
+	}
+}
+	
+/* SCREENS (720px) */
+
+@media only screen and (min-width:720px) and (max-width:959px) {
+	#nav {
+		width: 700px;
+		margin: 0 auto;
+	}
+	#project-list {
+		width: 700px;
+		margin: 0 auto;
+	}
+	#blog { 
+		padding: 3rem 0;
+	}
+	html, body {
+		font-size: 14px !important;
+	}
+	#banner {
+		width: 100%;
+		background-position: center middle;
+		background-attachment: scroll;
+		display: block;
+		height: auto;
+	}
+	#banner-heading{
+		padding: 0 2rem;
+		display:block;
+		vertical-align:middle;
+		width:720px;
+		margin: 0 auto;
+		
+	}
+	#banner-heading h1 {
+		max-width: 600px;
+		font-size: 2rem;
+		padding: 5rem 0;
+		margin: 0 auto;
+	}
+}
+
